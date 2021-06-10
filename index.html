@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.</title>
+    <title>正在重新導向 ...</title>
     <style>
         * {
             padding: 0;
@@ -28,9 +28,20 @@
 </head>
 
 <body>
-    <p>本站訪客數: <span id="busuanzi_value_site_uv"></span> 人</p> 
-    <p>本站總訪問量: <span id="busuanzi_value_site_pv"></span> 次</p>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <p>正在重新導向到網站, 如果沒有事情發生, 請 <a href="https://tszhong.top">按此</a></p>
+    <div id="a"></div>
+    <script>
+        var e = 3;
+        var c = setInterval(function () {
+            if (e <= 0) {
+                clearInterval(c);
+                window.location.replace("https://tszhong.top");
+            } else {
+                document.getElementById("a").innerHTML = e + " 秒";
+            }
+            e -= 1;
+        }, 1000);
+    </script>
 </body>
 
 </html>
