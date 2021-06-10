@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正在重新導向 ...</title>
+    <style>
+        p {
+            font-size: 20px;
+        }
+
+        a {
+            color: blue
+        }
+    </style>
+</head>
+
+<body>
+    <p>正在重新導向到網站, 如果沒有事情發生, 請 <a href="https://tszhong.top">按此</a></p>
+
+    <div id="a"></div>
+    <script>
+        var e = 3;
+        var c = setInterval(function () {
+            if (e <= 0) {
+                clearInterval(c);
+                window.location.replace("https://tszhong.top");
+            } else {
+                document.getElementById("a").innerHTML = e + " 秒";
+            }
+            e -= 1;
+        }, 1000);
+    </script>
+</body>
+
+</html>
